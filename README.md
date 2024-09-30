@@ -54,3 +54,48 @@ Execute the install.ps1 script to complete the installation:
 
 This script will install all necessary dependencies and set up the program on your system. 
 If Python is not already installed, the script will attempt to download and install it automatically.
+
+# Installation Instructions for Linux Users
+
+There are two ways to install SecuServer: using `curl` or the Python interpreter.
+
+## Option 1: Install Using curl
+
+1. **Install curl (if you don't have it already):**
+
+```bash
+   sudo apt update
+   sudo apt install curl
+```
+Or whatever package manager your distro uses.
+
+Download and Execute the Install Script: Run the following command to download and execute the installation script:
+
+ ```bash
+curl -O https://raw.githubusercontent.com/NeronNymus/Secuserver/main/install.py && sudo python3 install.py
+```
+
+
+## Option 2: Install Using Python
+2. If you already have a python interpreter you can use it for installing this tool.
+All you need is the 'requests' library, fetch it with
+
+```bash
+sudo pip install requests
+```
+
+Now, download the installation script:
+
+```bash
+python3 -c "import requests; r = requests.get('https://raw.githubusercontent.com/NeronNymus/Secuserver/main/install.py'); open('install.py', 'wb').write(r.content)"
+```
+
+Run the Installation Script: Execute the downloaded installation script using sudo:
+
+```bash
+sudo python3 install.py
+```
+
+This will download the necessary files and set up the SecuServer program on your Linux system.
+
+
