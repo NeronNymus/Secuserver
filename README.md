@@ -27,3 +27,18 @@ from [python.org](https://www.python.org/downloads/).
 
 ```powershell
    git clone https://github.com/NeronNymus/Secuserver.git
+```
+
+### Navigate to the Secuserver Directory
+After cloning the repository, change to the Secuserver directory:
+
+```powershell
+cd Secuserver
+```
+
+Execute the install.ps1 script to complete the installation:
+
+```powershell
+.\install.ps1
+```
+
