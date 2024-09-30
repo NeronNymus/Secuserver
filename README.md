@@ -28,7 +28,9 @@ For the fastest way to install the tool, execute this single command in PowerShe
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/NeronNymus/Secuserver/main/install.ps1" -OutFile "$env:TEMP\install.ps1"; & "$env:TEMP\install.ps1"
 ```
 
-### Installation Steps
+This will automatically download the install.ps1 script and execute it to complete the setup.
+
+### Detailed Installation Steps
 
 1. **Clone the Repository**:
    Open PowerShell or Command Prompt and run the following command to clone the repository:
