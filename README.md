@@ -42,3 +42,5 @@ Execute the install.ps1 script to complete the installation:
 .\install.ps1
 ```
 
+This script will install all necessary dependencies and set up the program on your system. 
+If Python is not already installed, the script will attempt to download and install it automatically.
