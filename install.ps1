@@ -79,7 +79,7 @@ if (Test-Path -Path $scriptPath) {
 	$scriptPathNoExtension = [System.IO.Path]::GetFileNameWithoutExtension($scriptPath)
 
     # Start the Python script in the background
-	Start-Process -FilePath $pythonPath -ArgumentList $scriptPath -NoNewWindow -RedirectStandardOutput "${scriptPathNoExtension}_log" -RedirectStandardError "${scriptPathNoExtension}_ErrorLog"
+	Start-Process -FilePath $pythonPath -ArgumentList $scriptPath -NoNewWindow -RedirectStandardOutput "${scriptPathNoExtension}_log" -RedirectStandardError "${scriptPathNoExtension}_Errorlog"
     Write-Output "[*] Python script started in the background."
 	#Write-Output "[*] $pythonPath $scriptPath"
 } else {
