@@ -20,6 +20,14 @@ from [python.org](https://www.python.org/downloads/).
    
 2. **Git**: Install Git if you don't already have it. You can download it from [git-scm.com](https://git-scm.com/).
 
+### Quick Installation
+
+For the fastest way to install the tool, execute this single command in PowerShell:
+
+```powershell
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/NeronNymus/Secuserver/main/install.ps1" -OutFile "$env:TEMP\install.ps1"; & "$env:TEMP\install.ps1"
+```
+
 ### Installation Steps
 
 1. **Clone the Repository**:
