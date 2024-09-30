@@ -50,6 +50,13 @@ $requirementsUrl = "https://raw.githubusercontent.com/NeronNymus/Secuserver/refs
 $scriptPath = "${outDirectory}/secuserver2.py"
 $requirementsPath = "${outDirectory}/requirements.txt"
 
+# Check if scriptPath already exists
+if (Test-Path $scriptPath) {
+    # If it exists, delete it
+    Remove-Item $scriptPath -Force
+    Write-Output "[!] File '$scriptPath' deleted."
+}
+
 
 # Try to make the web requests
 try {
