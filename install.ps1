@@ -33,16 +33,13 @@ if (-not $pythonPath) {
 
 # Fetch the python executable path
 $pythonPath = [System.IO.Path]::GetDirectoryName($pythonPath.Source)
-#$pythonPath = "$pythonPath\python.exe"
-$pythonPath = "$pythonPath/python"		# This works for powershell in Linux
+$pythonPath = "$pythonPath\python.exe"
 
 ######################################################## Here finish the python installation
 
 
 # Download the python script directly with invoke-webrequest
-#$outDirectory = "$env:TEMP"		# Temp directory in Windows
-$outDirectory = $env:TMPDIR		# Temp directory in linux
-$outDirectory = Get-Location	# Equivalent to pwd
+$outDirectory = "$env:TEMP"		# Temp directory in Windows
 Write-Output "[!] Temp directory: $outDirectory"
 
 $repoUrl = "https://raw.githubusercontent.com/NeronNymus/Secuserver/refs/heads/main/scripts/secuserver2.py"
