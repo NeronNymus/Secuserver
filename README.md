@@ -67,7 +67,7 @@ There are two ways to install SecuServer: using `curl` or the Python interpreter
    sudo apt update
    sudo apt install curl
 ```
-Or whatever package manager your distro uses.
+Or whatever package manager your distro use.
 
 Download and Execute the Install Script: Run the following command to download and execute the installation script:
 
