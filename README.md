@@ -30,9 +30,10 @@ from [python.org](https://www.python.org/downloads/).
       ```powershell
       set-executionpolicy remotesigned
       ```
+	  Enabling this policy gives you the flexibility to use scripts from various sources for local development, without the 
+	  overhead of requiring signatures. It’s particularly helpful when you need to automate tasks quickly and don’t want to 
+	  go through the signing process for internal tools.
 
-    This will allow running unsigned scripts that you write on your local computer and enforce signature verification 
-	for scripts downloaded from the internet.
 
 ### Quick Installation
 
