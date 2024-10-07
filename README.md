@@ -20,6 +20,20 @@ from [python.org](https://www.python.org/downloads/).
    
 2. **Git**: Install Git if you don't already have it. You can download it from [git-scm.com](https://git-scm.com/).
 
+3. **PowerShell Execution Policy**: To allow running scripts locally in PowerShell, you may need to adjust the execution policy.
+
+    - **Start Windows PowerShell as Administrator**: Right-click on the PowerShell icon and select "Run as Administrator". 
+	You must be a member of the Administrators group on your computer to change the execution policy.
+
+    - **Enable running unsigned scripts**: Enter the following command in the PowerShell terminal:
+
+      ```powershell
+      set-executionpolicy remotesigned
+      ```
+
+    This will allow running unsigned scripts that you write on your local computer and enforce signature verification 
+	for scripts downloaded from the internet.
+
 ### Quick Installation
 
 For the fastest way to install the tool, execute this single command in PowerShell:
